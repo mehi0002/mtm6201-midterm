@@ -53,22 +53,40 @@ table {
 
 /************** Universal Styles *****************/
 
-/********* Fonts ***********/
+body{
+	background-color: #F2E9DD;
+	font-family: 'Raleway', sans-serif;
+	color: #3C2912;
+}
 
-/* Title */
-font-family: 'Great Vibes', cursive;
+/* Company Name */
+h1{
+	font-family: 'Great Vibes', cursive;
+	color: #98B23C;
+}
 
-/* Headers */
-font-family: 'Arima Madurai', cursive;
+/* Headings, menus */
+h2, h3, h4, nav a, .social a{
+	color: #D09637;
+	font-family: 'Arima Madurai', cursive;
+}
 
-/* Paragraph */
-font-family: 'Raleway', sans-serif;
+/* button style */
+button{
+	background-color: #F2E9DD;
+	color: #D09637;
+	border: 2px solid #98B23C;
+    border-radius: 77.5em;
+	padding: 0.5em 3em;
+}
 
 /* Banner */
 .banner{
 	background-image: url("images/banner.jpg");
 	width:100%;
 }
+
+
 
 /****************************************************************
 ********************** Mobile < 412px ***************************
