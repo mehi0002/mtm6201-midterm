@@ -54,9 +54,10 @@ table {
 /************** Universal Styles *****************/
 
 body{
-	background-color: #F2E9DD;
+	background-color: blanchedalmond;
 	font-family: 'Raleway', sans-serif;
 	color: #3C2912;
+	font-size: 16px;
 }
 
 /* Company Name */
@@ -73,7 +74,7 @@ h2, h3, h4, nav a, .social a{
 
 /* button style */
 button{
-	background-color: #F2E9DD;
+	background-color: #f1e1cc;
 	color: #D09637;
 	border: 2px solid #98B23C;
     border-radius: 77.5em;
@@ -86,11 +87,48 @@ button{
 	width:100%;
 }
 
-
+.logo{
+	font-family: 'Great Vibes', cursive;
+	color: #98B23C;
+}
 
 /****************************************************************
-********************** Mobile < 412px ***************************
+********************** Default/Mobile < 412px ***************************
 *****************************************************************/
+header{
+	width: 100%;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav a{
+	text-decoration: none;
+    font-size: 2em;
+    padding: 0.4em;
+    width: 100%;
+    text-align: center;
+}
+
+/* Put the Business name and logo at the top */
+nav a[href="index.html"]{
+	order: -1;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    font-size: 3em;
+}
+
+nav a[href="index.html"] img{
+	width: 75px;
+}
+
+
+
 
 
 /****************************************************************
