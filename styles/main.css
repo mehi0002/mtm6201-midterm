@@ -60,16 +60,29 @@ body{
 	font-size: 16px;
 }
 
-/* Company Name */
 h1{
 	font-family: 'Great Vibes', cursive;
 	color: #98B23C;
+	font-size: 2rem;
+	padding: 0.5em;
+	text-align: center;
 }
 
 /* Headings, menus */
 h2, h3, h4, nav a, .social a{
 	color: #D09637;
 	font-family: 'Arima Madurai', cursive;
+	padding: 0.5em;
+	text-align: center;
+}
+
+/* Heading sizes */
+h2{
+	font-size: 1.25rem;
+}
+
+h3, h4{
+	font-size: 1rem;
 }
 
 /* button style */
@@ -87,9 +100,30 @@ button{
 	width:100%;
 }
 
-.logo{
-	font-family: 'Great Vibes', cursive;
-	color: #98B23C;
+section{
+	display: grid;
+	width:100%;
+}
+
+.card{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 350px;
+    border: 2px green solid;
+    padding: 0.75rem;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.card p{
+	/* flex-grow: 1; */
+}
+
+.card img{
+	
 }
 
 /****************************************************************
@@ -108,7 +142,7 @@ nav{
 
 nav a{
 	text-decoration: none;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 0.4em;
     width: 100%;
     text-align: center;
@@ -124,10 +158,17 @@ nav a[href="index.html"]{
 }
 
 nav a[href="index.html"] img{
-	width: 75px;
+	width: 350px;
 }
 
+.banner{
+	display: none;
+}
 
+section{
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1fr);
+}
 
 
 
