@@ -54,34 +54,39 @@ table {
 /************** Universal Styles *****************/
 
 body{
-	background-color: blanchedalmond;
+	background-color: rgb(240, 234, 227);
 	font-family: 'Raleway', sans-serif;
 	color: #3C2912;
 	font-size: 16px;
+	box-sizing: border-box;
 }
 
 h1{
 	font-family: 'Great Vibes', cursive;
 	color: #98B23C;
-	font-size: 2rem;
-	padding: 0.5em;
+	font-size: 3rem;
+	padding: 1em 0em 0em 0em;
 	text-align: center;
 }
 
 /* Headings, menus */
-h2, h3, h4, nav a, .social a{
+h2, h3, h4, .social a{
 	color: #D09637;
 	font-family: 'Arima Madurai', cursive;
-	padding: 0.5em;
+	padding: 1em 0em 0em 0em;
 	text-align: center;
 }
 
 /* Heading sizes */
 h2{
-	font-size: 1.25rem;
+	font-size: 2rem;
 }
 
-h3, h4{
+h3{
+	font-size: 1.5rem;
+}
+
+h4{
 	font-size: 1rem;
 }
 
@@ -91,17 +96,21 @@ button{
 	color: #D09637;
 	border: 2px solid #98B23C;
     border-radius: 77.5em;
-	padding: 0.5em 3em;
+	padding: 1em;
 }
 
 /* Banner */
-.banner{
+/* .banner{
 	background-image: url("images/banner.jpg");
+	width:100%;
+} */
+
+main{
 	width:100%;
 }
 
 section{
-	display: grid;
+	/* display: grid; */
 	width:100%;
 }
 
@@ -111,19 +120,17 @@ section{
     align-items: center;
     justify-content: space-around;
 
-    width: 350px;
-    border: 2px green solid;
-    padding: 0.75rem;
-    border-radius: 15px;
-    margin: auto;
-}
-
-.card p{
-	/* flex-grow: 1; */
+    width: 100%;
+    padding: 0.75rem 0rem 0.75rem 0rem;
 }
 
 .card img{
-	
+	width: 100%;
+	margin: 1rem 0rem 1rem 0rem;
+}
+
+button{
+	margin: 1rem;
 }
 
 /****************************************************************
@@ -143,9 +150,11 @@ nav{
 nav a{
 	text-decoration: none;
     font-size: 1.5em;
-    padding: 0.4em;
+    padding: 0.4em 0em 0.4em 0em;
     width: 100%;
-    text-align: center;
+    color: #D09637;
+	font-family: 'Arima Madurai', cursive;
+	text-align: center;
 }
 
 /* Put the Business name and logo at the top */
@@ -166,8 +175,8 @@ nav a[href="index.html"] img{
 }
 
 section{
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(4, 1fr);
+	/* grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1fr); */
 }
 
 
