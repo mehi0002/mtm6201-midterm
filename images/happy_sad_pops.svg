@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1158 526" style="enable-background:new 0 0 1158 526;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D0E28C;stroke:#9FA538;stroke-width:6.4843;stroke-miterlimit:10;}
+	.st1{fill:#9FA538;stroke:#9FA538;stroke-width:6.4843;stroke-miterlimit:10;}
+	.st2{fill:#9FA538;}
+	.st3{fill:#EEDE6B;stroke:#D09637;stroke-width:6.4843;stroke-miterlimit:10;}
+	.st4{fill:#D09637;stroke:#D09637;stroke-width:6.4843;stroke-miterlimit:10;}
+	.st5{fill:#D09637;}
+</style>
+<g id="Sad_Pop">
+	<circle id="Head" class="st0" cx="345.1" cy="194.41" r="84.26"/>
+	<line id="Stick" class="st0" x1="285.71" y1="252.24" x2="65.19" y2="472.17"/>
+	<g id="Face">
+		
+			<ellipse id="left_eye" transform="matrix(0.628 -0.7782 0.7782 0.628 -4.903 365.9921)" class="st1" cx="380.37" cy="188.12" rx="28.28" ry="5.59"/>
+		<g>
+			
+				<ellipse id="right_eye" transform="matrix(0.628 -0.7782 0.7782 0.628 6.5225 322.4887)" class="st1" cx="340.58" cy="154.42" rx="28.28" ry="5.59"/>
+			<g id="mouth">
+				<path class="st2" d="M336.56,271.59c7.24-9.06,11.43-20.33,10.27-31.8c-2.24-27.56-32.09-52.27-59.42-41.31
+					c-5.36,1.98-10.32,5.13-15.06,8.73c17.39-21.86,46.34-21.18,65.21-1.47C355.66,224.29,357.9,254.68,336.56,271.59L336.56,271.59
+					z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Happy_Pop">
+	<line id="stick" class="st3" x1="157.72" y1="192.7" x2="124.69" y2="498"/>
+	<circle id="head" class="st3" cx="167.61" cy="110.4" r="84.26"/>
+	<g id="Face_00000031902108841624924920000012599401845857218435_">
+		
+			<ellipse id="right_eye_00000142170539963848843900000012929203304991910562_" class="st4" cx="138.99" cy="82.12" rx="5.59" ry="28.28"/>
+		
+			<ellipse id="left_eye_00000072253569717324630800000006829240024053101210_" class="st4" cx="191.12" cy="83.36" rx="5.59" ry="28.28"/>
+		<g id="mouth_00000107578615143095341370000001585113107148819878_">
+			<path class="st5" d="M120.43,128.11c1.3,11.31,6.24,22.01,15.01,29.15c16.62,13.74,43.65,14.88,60.2,0.54
+				c8.58-7.38,12.67-18.48,14.04-29.69c3.19,27.27-17.38,46.95-44.18,46.4C140.05,174.24,117.33,154.69,120.43,128.11L120.43,128.11
+				z"/>
+		</g>
+	</g>
+</g>
+</svg>

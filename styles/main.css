@@ -51,50 +51,64 @@ table {
 	border-spacing: 0;
 }
 
-/************** Universal Styles *****************/
+/****************************************************************
+********************** Default/Mobile < 412px ***************************
+*****************************************************************/
+
+:root{
+	/* Site colours */
+	--primary: #D09637;
+	--accent: #98B23C;
+	--page: rgb(240, 234, 227);
+	--text: #3C2912;
+
+	/* Site fonts */
+	--serif: 'Arima Madurai';
+	--sans: 'Raleway';
+	--script: Great Vibes;
+}
 
 body{
-	background-color: rgb(240, 234, 227);
-	font-family: 'Raleway', sans-serif;
-	color: #3C2912;
+	background-color: var(--page);
+	font-family: var(--sans), sans-serif;
+	color: var(--text);
 	font-size: 16px;
 	box-sizing: border-box;
 }
 
 h1{
-	font-family: 'Great Vibes', cursive;
-	color: #98B23C;
-	font-size: 3rem;
-	padding: 1em 0em 0em 0em;
+	font-family: var(--serif), cursive;
+	color: var(--accent);
+	font-size: 2rem;
+	padding: 1em 0em 0.5em 0em;
 	text-align: center;
 }
 
 /* Headings, menus */
 h2, h3, h4, .social a{
-	color: #D09637;
-	font-family: 'Arima Madurai', cursive;
-	padding: 1em 0em 0em 0em;
-	text-align: center;
+	color: var(--primary);
+	font-family: var(--script), cursive;
+    text-align: center;
 }
 
 /* Heading sizes */
 h2{
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 h3{
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 }
 
 h4{
-	font-size: 1rem;
+	font-size: 2rem;
 }
 
 /* button style */
 button{
-	background-color: #f1e1cc;
-	color: #D09637;
-	border: 2px solid #98B23C;
+	background-color: var(--page);
+	color: var(--primary);
+	border: 2px solid var(--accent);
     border-radius: 77.5em;
 	padding: 1em;
 }
@@ -110,7 +124,6 @@ main{
 }
 
 section{
-	/* display: grid; */
 	width:100%;
 }
 
@@ -118,10 +131,14 @@ section{
 	display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content:
 
     width: 100%;
-    padding: 0.75rem 0rem 0.75rem 0rem;
+}
+
+.card > h2{
+	align-self: flex-start;
+	transform: translateY(30px);
 }
 
 .card img{
@@ -133,9 +150,6 @@ button{
 	margin: 1rem;
 }
 
-/****************************************************************
-********************** Default/Mobile < 412px ***************************
-*****************************************************************/
 header{
 	width: 100%;
 }
@@ -152,12 +166,12 @@ nav a{
     font-size: 1.5em;
     padding: 0.4em 0em 0.4em 0em;
     width: 100%;
-    color: #D09637;
-	font-family: 'Arima Madurai', cursive;
+    color: var(--primary);
+	font-family: var(--serif), cursive;
 	text-align: center;
 }
 
-/* Put the Business name and logo at the top */
+/* Move the Business name and logo at the top */
 nav a[href="index.html"]{
 	order: -1;
     justify-content: flex-start;
