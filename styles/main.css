@@ -150,14 +150,15 @@ h4{
 /* button style */
 button{
 	height: 45px;
-	background-color: var(--page);
+	background-color: var(--primary);
 	
-	color: var(--primary);
+	color: var(--text);
 	font-size: 1.2em;
 	font-family: var(--serif);
+	font-weight: 600;
 	text-align: center;
 
-	border: 2px solid var(--accent);
+	border: 2px solid var(--page);
     border-radius: 77.5em;
 }
 
@@ -207,6 +208,7 @@ button{
 	grid-column-end: span 3;
 
     font-size: 1.5em;
+	font-weight: 600;
 	text-align: center;
 }
 
@@ -217,10 +219,10 @@ button{
 }
 
 /****************************************************************
-********************** Tablet 412px > 912 ***************************
+********************** Tablet 400px > 900px ***************************
 *****************************************************************/
 
 
 /****************************************************************
-********************** Desktop > 912 ***************************
+********************** Desktop > 900px ***************************
 *****************************************************************/
