@@ -17,72 +17,115 @@
     </head>
 
     <body>
-        <header>
+        <header role="banner">
             <!-- Navigation menu -->
-            <nav>
-                <a href="index.html"> <img src="images/logo.svg"> </a>
+            <nav role="navigation">
+                
+                <!-- Logo home page link -->
+                <a href="index.html"> <img src="images/logo.svg" alt="Eat Your Feelings logo in script with a happy and sad cake pop"> </a>
                 <a href="#"> Products </a>
                 <a href="#">Events</a>
                 <a href="about.html">About</a>
                 <a href="contact">Contact</a>
             </nav>
-
-            <!-- Banner -->
-            <div roll="banner" class="banner">
-                <h2>banner</h2>
-            </div>
             
         </header>
 
-        <main>
+        <main role="main">
+           <!-- Banner -->
+           <div class="banner">
+               <h2>banner</h2>
+           </div>
 
-            <!-- Service Cards -->
+            <!-- ************ Service Cards *************** -->
             <article>
                 <h1>How Are You Feeling Today?</h1>
 
-                <!-- Weddings -->
-                <section class="card">
-                    <h2>In Love</h2>
-                    <img src="images/mobile/m_in_love.jpg">
-                    <p>Cake pops and favours for your special day</p>
-                    <button>Order Now</button>
+                <!-- ****** Weddings ******* -->
+                <section class="card" itemscope itemtype="https://schema.org/Product" role="region">
+                    <h2 id="wedding_heading" itemprop="name" role="heading">In Love</h2>
+                    
+                    <picture itemprop="image" aria-labelledby="wedding_heading" aria-details="wedding_blurb">
+                        <!-- Viewports below 600px  -->
+                        <source srcset="
+                            images/mobile/m_in_love.jpg, 
+                            images/mobile/m_in_lovex2.jpg 1.5x,
+                            images/mobile/m_in_lovex3.jpg 2x" 
+                            media="(max-width: 600px)">
+                            <img src="images/in_love.jpg" alt="a bride and a groom">
+                    </picture>
+                    
+                    <p itemprop="typeOfGood" id="wedding_blurb">Cake pops and favours for your special day</p>
+                    <button role="button">Order Now</button>
                 </section>
 
-                <!-- Baby Showers -->
-                <section class="card">
-                    <h2>Expectant</h2>
-                    <img src="images/mobile/m_expectant.jpg">
-                    <p>Baby showers, cake smashes, and more</p>
-                    <button>Order Now</button>
+                <!-- ********** Baby Showers ********* -->
+                <section class="card" itemscope itemtype="https://schema.org/Product" role="region">
+                    <h2  id="baby_heading" itemprop="name" role="heading">Expectant</h2>
+                    
+                    <!-- Viewports below 600px  -->
+                    <picture itemprop="image" aria-labelledby="baby_heading" aria-details="baby_blurb">
+                        <source srcset="
+                            images/mobile/m_expectant.jpg,
+                            images/mobile/m_expectantx2.jpg 1.5x,
+                            images/mobile/m_expectantx3.jpg 2x"
+                            media="(max-width: 600px)">
+                            <img src="images/expectant.jpg" alt="a pregnant person placing their hands in a heart over their belly">
+                    </picture>
+
+                    <p  id="baby_blurb" itemprop="typeOfGood">Baby showers, cake smashes, and more</p>
+                    <button role="button">Order Now</button>
                 </section>
 
-                <!-- Celebrations -->
-                <section class="card">
-                    <h2>Celebratory</h2>
-                    <img src="images/mobile/m_celebrate.jpg">
-                    <p>From birthdays to bat mitzvahs, there are so many reasons to celebrate</p>
-                    <button>Order Now</button>
+                <!-- ******** Celebrations ********* -->
+                <section role="region" class="card"  itemscope itemtype="https://schema.org/Product">
+                    <h2 itemprop="name" id="celebration_heading" role="heading">Celebratory</h2>
+                    
+                    <picture itemprop="image" aria-labelledby="celebration_heading" aria-details="celebration_blurb">
+                       
+                        <!-- Viewports below 600px  -->
+                        <source srcset="
+                            images/mobile/m_celebrate.jpg,
+                            images/mobile/m_celebratex2.jpg 1.5x,
+                            images/mobile/m_celebratex3.jpg 2x"
+                            media="(max-width: 600px)">
+                            <img src="images/celebrate.jpg" alt="a woman smiling and throwing confetti into the air">
+                    </picture>
+                   
+                    <p id="celebration_blurb" itemprop="typeOfGood">From birthdays to bat mitzvahs, there are so many reasons to celebrate</p>
+                    <button role="button">Order Now</button>
                 </section>
 
-                <!-- Corporate -->
-                <section class="card">
-                    <h2>Ready to Impress</h2>
-                    <img src="images/mobile/m_impress.jpg">
-                    <p>Impress your guests at your next corporate event or dinner party</p>
-                    <button>Order Now</button>
+                <!-- ********* Corporate ********* -->
+                <section role="region" class="card"  itemscope itemtype="https://schema.org/Product">
+                    <h2 itemprop="name" id="corporate_heading" role="heading">Ready to Impress</h2>
+                   
+                    <picture itemprop="image" aria-labelledby="corporate_heading" aria-details="corporate_blurb" >
+                        <!-- Viewports below 600px  -->
+                        <source srcset="
+                            images/mobile/m_impress.jpg,
+                            images/mobile/m_celebratex2.jpg 1.5x,
+                            images/mobile/m_celebratex3.jpg 2x"
+                            media="(max-width: 600px)">
+                            <img src="images/impress.jpg" alt="Gold confetti exploding out of a champange glass">
+                    </picture>
+                    <p itemprop="typeOfGood" id="corporate_blurb">Impress your guests at your next corporate event or dinner party</p>
+                    <button role="button">Order Now</button>
+
                 </section>
 
             </article>
         </main>
         
-        <footer>
+        <!-- ****************** Footer ************** -->
+        <footer role="contentinfo">
 
             <!-- Social media links -->
-            <div class="social">
-                <button>IG</button>
-                <button>F</button>
-                <button>T</button>
-                <button>P</button>
+            <div role="group" class="social" itemscope itemtype="http://schema.org/Organization">
+                <button role="button" itemprop="url">IG</button>
+                <button role="button" itemprop="sameAs">F</button>
+                <button role="button" itemprop="sameAs">T</button>
+                <button role="button" itemprop="sameAs">P</button>
             </div>
 
             <!-- Copyright -->
