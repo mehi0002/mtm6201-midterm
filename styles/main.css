@@ -66,6 +66,10 @@ table {
 	--serif: 'Arima Madurai';
 	--sans: 'Raleway';
 	--script: Great Vibes;
+
+	/* Animation settings */
+	--link_timing: 0.5s;
+	--link_flow: ease-in-out;
 }
 
 /* Default styles */
@@ -110,7 +114,7 @@ nav{
 	width: 100%;
 }
 
-nav a{
+header a{
 	/* style */
 	text-decoration: none;
 	color: var(--primary);
@@ -121,10 +125,12 @@ nav a{
 	text-align: center;
     padding: 0.4em 0em 0.4em 0em;
     width: 100%;
+
+	transition: all var(--link_timing) var(--link_flow);
 }
 
 /* Highlight in gold when hovering */
-nav a:hover, nav a:active, .current_page{
+header a:hover, header a:active, header a:focus, .current_page{
 	color: var(--page);
 	background-color: var(--primary);
 }
@@ -138,6 +144,17 @@ nav a[href="index.html"] img{
 nav a[href="index.html"]{
 	color: var(--primary);
 	background-color: var(--page);
+}
+
+/* Hidden skip Link */
+header > a{
+	display:inline-block;
+	transform:translateY(-50px);
+	transition: all var(--link_timing) var(--link_flow);
+}
+
+header > a:focus{
+	transform:translateY(0px);
 }
 
 /************ Headings ***************/
@@ -180,9 +197,10 @@ button{
     text-align: center;
     border-radius: 77.5em;
     border: 2px solid var(--primary);
+	transition: all var(--link_timing) var(--link_flow);
 }
 
-button:hover, button:active{
+button:hover, button:active, button:focus{
 	color:var(--page);
 	background-color: var(--primary);
 
@@ -244,6 +262,12 @@ button:hover, button:active{
 .card button{
 	grid-row-start: 3;
     grid-column-start: 2
+}
+
+.card button:hover, .card button:active, .card button:focus{
+	transform: scale(1.1);
+
+	transition: transform 0.2s snap;
 }
 
 /************** Social Media Buttons *********/
