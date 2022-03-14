@@ -12,7 +12,10 @@
         
         <!-- Stylesheet -->
         <link rel="stylesheet" href="styles/main.css">
-        
+
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/ff873081cf.js" crossorigin="anonymous"></script>
+
         <title>Eat Your Feelings</title>
     </head>
 
@@ -35,10 +38,26 @@
         </header>
 
         <main role="main">
-           <!-- Banner -->
-           <div class="banner">
-               <h2>banner</h2>
-           </div>
+           
+            <!-- ***** Product Carousel ******* -->
+           <div class="carousel">
+
+               <!-- Backwards -->
+               <div><i class="fa fa-duotone fa-backward-step"></i></div>
+           
+                <picture>
+                    <source scrset="
+                        images/tablet/banner.jpg,
+                        images/tablet/bannerx2.jpg 1.5x,
+                        images/tablet/bannerx3.jpg 2x"
+                        media="(min-width:600px)">
+                        <img src="images/tablet/bannerx3.jpg" alt="tray of gold and silver dusted wedding cake pops">
+                </picture>
+
+               <!-- Forwards -->
+                
+               <div><i class="fa fa-duotone fa-forward-step"></i></div>
+            </div>
 
             <!-- ************ Service Cards *************** -->
             <article id="services">
@@ -55,7 +74,7 @@
                             images/mobile/m_in_lovex2.jpg 1.5x,
                             images/mobile/m_in_lovex3.jpg 2x" 
                             media="(max-width: 600px)">
-                            <img src="images/in_love.jpg" alt="a bride and a groom">
+                            <img src="images/mobile/m_in_lovex3.jpg" alt="a bride and a groom">
                     </picture>
                     
                     <p itemprop="typeOfGood" id="wedding_blurb">Cake pops and favours for your special day</p>

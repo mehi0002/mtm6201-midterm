@@ -61,6 +61,7 @@ table {
 	--accent: #98B23C;
 	--page: rgb(240, 234, 227);
 	--text: #3C2912;
+	--accent_light: #d4e1ac;
 
 	/* Site fonts */
 	--serif: 'Arima Madurai';
@@ -213,7 +214,7 @@ button:hover, button:active, button:focus{
 /****************** Classes ********************/
 
 /* No banner for mobile */
-.banner{
+.carousel{
 	display: none;
 }
 
@@ -229,7 +230,7 @@ button:hover, button:active, button:focus{
 }
 
 /* Washed out background image */
-.card picture{
+.card picture, .card picture img{
 	grid-row-start: 1;
     grid-row-end: span 3;
     grid-column-start: 1;
@@ -286,10 +287,13 @@ button:hover, button:active, button:focus{
 *****************************************************************/
 
 @media screen and (min-width: 600px){
-	header, main, footer{
+	/***** Whitespace ******/
+	
+	header, main .services, footer{
 		padding: var(--container_padding);
 	}
 	
+	/*********** Horizontal Navigation Bar ***********/
 	nav{
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -300,14 +304,41 @@ button:hover, button:active, button:focus{
 		flex-grow:1;
 	}
 
+	/* Logo home link full width above menu links */
 	nav a[href="index.html"]{
 		width:100%;
+	}
+
+	/***************** Product Image Carousel ***************/
+	.carousel{
+		width: 100%;
+		height: fit-content;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		background-color: var(--accent_light);
+	}
+
+	.carousel div{
+		font-size: 1.5rem;
+		padding: 1.5rem;
+		color: var(--accent);
+		background-color: var(--accent_light);
+		height:100%;
+	}
+
+	.carousel picture, .carousel img{
+		width:100%;
+		flex-grow:1;
 	}
 }
 
 
 
-header a
 /****************************************************************
 ********************** Desktop > 900px ***************************
 *****************************************************************/
