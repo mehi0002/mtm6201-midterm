@@ -298,6 +298,7 @@ button:hover, button:active, button:focus{
 
 	header{
 		padding-top: 0px;
+		padding-bottom: calc(var(--container_padding) / 2);
 	}
 	
 	/*********** Horizontal Navigation Bar ***********/
@@ -314,6 +315,7 @@ button:hover, button:active, button:focus{
 	/* Logo home link full width above menu links */
 	nav a[href="index.html"]{
 		width:100%;
+		padding: 0px;
 	}
 
 	h2{
@@ -421,3 +423,41 @@ button:hover, button:active, button:focus{
 /****************************************************************
 ********************** Desktop > 900px ***************************
 *****************************************************************/
+
+@media screen and (min-width: 900px){
+	
+	/**************** Navigation ***************/
+	
+	/* Single row */
+	nav{
+		flex-wrap: nowrap;
+	}
+
+	/* Have logo expand with sceen size */
+	nav a[href="index.html"] img{
+		width:100%;
+	}
+
+	/* Centered logo */
+	nav a[href="index.html"]{
+		flex-grow: 2;
+		width: fit-content;
+		order: 3;
+	}
+
+	nav a:nth-child(2){
+		order:1;
+	}
+
+	nav a:nth-child(3){
+		order:2;
+	}
+
+	nav a:nth-child(4){
+		order:4;
+	}
+
+	nav a:nth-child(5){
+		order:5;
+	}
+}
