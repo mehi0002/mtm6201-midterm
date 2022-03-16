@@ -46,12 +46,15 @@
                <div><i class="fa fa-duotone fa-backward-step"></i></div>
            
                 <picture>
+                    <!-- Tablet 600px > 900px -->
                     <source scrset="
-                        images/tablet/banner.jpg,
-                        images/tablet/bannerx2.jpg 1.5x,
-                        images/tablet/bannerx3.jpg 2x"
+                        images/tablet/t_banner.jpg,
+                        images/tablet/t_bannerx2.jpg 1.5x,
+                        images/tablet/t_bannerx3.jpg 2x"
                         media="(min-width:600px)">
-                        <img src="images/tablet/bannerx3.jpg" alt="tray of gold and silver dusted wedding cake pops">
+
+                        <!-- Default -->
+                        <img src="images/banner.jpg" alt="tray of gold and silver dusted wedding cake pops">
                 </picture>
 
                <!-- Forwards -->
@@ -74,7 +77,16 @@
                             images/mobile/m_in_lovex2.jpg 1.5x,
                             images/mobile/m_in_lovex3.jpg 2x" 
                             media="(max-width: 600px)">
-                            <img src="images/mobile/m_in_lovex3.jpg" alt="a bride and a groom">
+
+                        <!-- Tablet 600px > 900px -->
+                         <source scrset="
+                            images/tablet/t_in_love.jpg,
+                            images/tablet/t_in_lovex2.jpg 1.5x,
+                            images/tablet/t_in_lovex3.jpg 2x"
+                            media="(min-width:600px)">    
+                        
+                        <!-- Default -->
+                        <img src="images/mobile/m_in_lovex3.jpg" alt="a bride and a groom">
                     </picture>
                     
                     <p itemprop="typeOfGood" id="wedding_blurb">Cake pops and favours for your special day</p>
@@ -92,6 +104,15 @@
                             images/mobile/m_expectantx2.jpg 1.5x,
                             images/mobile/m_expectantx3.jpg 2x"
                             media="(max-width: 600px)">
+
+                        <!-- Tablet 600px > 900px -->
+                         <source scrset="
+                            images/tablet/t_expectant.jpg,
+                            images/tablet/t_expectantx2.jpg 1.5x,
+                            images/tablet/t_expectantx3.jpg 2x"
+                            media="(min-width:600px)">
+
+                            <!-- Default -->
                             <img src="images/expectant.jpg" alt="a pregnant person placing their hands in a heart over their belly">
                     </picture>
 
@@ -111,7 +132,16 @@
                             images/mobile/m_celebratex2.jpg 1.5x,
                             images/mobile/m_celebratex3.jpg 2x"
                             media="(max-width: 600px)">
-                            <img src="images/celebrate.jpg" alt="a woman smiling and throwing confetti into the air">
+                        
+                        <!-- Tablet 600px > 900px -->
+                         <source scrset="
+                            images/tablet/t_celebrate.jpg,
+                            images/tablet/t_celebratex2.jpg 1.5x,
+                            images/tablet/t_celebratex3.jpg 2x"
+                            media="(min-width:600px)">
+                        
+                        <!-- Default -->
+                        <img src="images/celebrate.jpg" alt="a woman smiling and throwing confetti into the air">
                     </picture>
                    
                     <p id="celebration_blurb" itemprop="typeOfGood">From birthdays to bat mitzvahs, there are so many reasons to celebrate</p>
@@ -123,12 +153,22 @@
                     <h2 itemprop="name" id="corporate_heading" role="heading">Ready to Impress</h2>
                    
                     <picture itemprop="image" aria-labelledby="corporate_heading" aria-details="corporate_blurb" >
+                        
                         <!-- Viewports below 600px  -->
                         <source srcset="
                             images/mobile/m_impress.jpg,
-                            images/mobile/m_celebratex2.jpg 1.5x,
-                            images/mobile/m_celebratex3.jpg 2x"
+                            images/mobile/m_impressx2.jpg 1.5x,
+                            images/mobile/m_impressx3.jpg 2x"
                             media="(max-width: 600px)">
+                        
+                        <!-- Tablet 600px > 900px -->
+                        <source scrset="
+                            images/tablet/t_impress.jpg,
+                            images/tablet/t_impressx2.jpg 1.5x,
+                            images/tablet/t_impressx3.jpg 2x"
+                            media="(min-width:600px)">
+                            
+                            <!-- Default -->
                             <img src="images/impress.jpg" alt="Gold confetti exploding out of a champange glass">
                     </picture>
                     <p itemprop="typeOfGood" id="corporate_blurb">Impress your guests at your next corporate event or dinner party</p>
