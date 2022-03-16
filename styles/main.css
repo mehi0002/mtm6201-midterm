@@ -73,7 +73,7 @@ table {
 	--link_flow: ease-in-out;
 
 	/* White Space */
-	--container_padding: 10px;
+	--container_padding: 2rem;
 }
 
 /* Default styles */
@@ -154,7 +154,7 @@ nav a[href="index.html"]{
 /* Hidden skip Link */
 header > a{
 	display:inline-block;
-	transform:translateY(-50px);
+	transform:translateY(-100px);
 	transition: all var(--link_timing) var(--link_flow);
 }
 
@@ -230,18 +230,17 @@ button:hover, button:active, button:focus{
 }
 
 /* Washed out background image */
-.card picture, .card picture img{
+.card picture, .card img{
 	grid-row-start: 1;
     grid-row-end: span 3;
     grid-column-start: 1;
     grid-column-end: span 3;
 
-	width: calc(100% - 4px);
-    margin: 2rem 0rem 1rem 0rem;
+	width: 100%;
+	margin: 2rem 0rem 1rem 0rem;
     z-index: -1;
     opacity: 40%;
 	border-top: 2px solid var(--primary);
-	border-radius:5px;
 }
 
 /* Top left heading*/
@@ -266,7 +265,9 @@ button:hover, button:active, button:focus{
 /* Lower middle button */
 .card button{
 	grid-row-start: 3;
-    grid-column-start: 2
+    grid-column-start: 2;
+
+    height: 32px;
 }
 
 .card button:hover, .card button:active, .card button:focus{
@@ -287,10 +288,16 @@ button:hover, button:active, button:focus{
 *****************************************************************/
 
 @media screen and (min-width: 600px){
+	
 	/***** Whitespace ******/
 	
-	header, main .services, footer{
+	header, main #services, footer{
 		padding: var(--container_padding);
+		width: calc(100% - (2 x var(--container_padding)));
+	}
+
+	header{
+		padding-top: 0px;
 	}
 	
 	/*********** Horizontal Navigation Bar ***********/
@@ -309,6 +316,10 @@ button:hover, button:active, button:focus{
 		width:100%;
 	}
 
+	h2{
+		font-size: 2rem;
+	}
+
 	/***************** Product Image Carousel ***************/
 	.carousel{
 		width: 100%;
@@ -323,6 +334,7 @@ button:hover, button:active, button:focus{
 		background-color: var(--accent_light);
 	}
 
+	/* Forward/back buttons */
 	.carousel div{
 		font-size: 1.5rem;
 		padding: 1.5rem;
@@ -331,13 +343,80 @@ button:hover, button:active, button:focus{
 		height:100%;
 	}
 
+	/* image */
 	.carousel picture, .carousel img{
 		width:100%;
 		flex-grow:1;
 	}
+
+	/********************* Service Cards ************************/
+	
+	/* Card Grid */
+	#services{
+		display:grid;
+		grid-template-areas: 
+		'h h'
+		'a b'
+		'c d';
+		gap: var(--container_padding);
+	}
+
+	#services h1{
+		grid-area: h;
+	}
+
+	/* card style */
+	.card{
+		display:flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		
+		padding: calc(var(--container_padding) / 2);
+		width: calc(100% - var(--container_padding));
+		border-radius: 15px;
+		border: 2px solid var(--accent);
+		font-size: 1rem;
+
+	}
+
+	/* card heading */
+	.card h2{
+		text-align:center;
+		margin-bottom: calc( var(--container_padding) / 2);
+	}
+
+	.card picture, .card img{
+		width:100%;
+		margin-top: 0px;
+		margin-bottom: calc( var(--container_padding) / 2);
+		border: none;
+		opacity: 100%;
+		border-radius: 15px;
+	}
+
+	.card p{
+		font-size: 1rem;
+		margin-bottom: auto;
+	}
+
+	.card button{
+		width: 60%;
+		margin-top: calc( var(--container_padding) / 2);
+		font-size: 1rem;
+	}
 }
 
+/****************************************************************
+********************** 700px > 900px ***************************
+*****************************************************************/
 
+/* Heading size tweaks */
+@media screen and (min-width: 750px){
+	.card h2{
+		font-size: 2.5rem
+	}
+}
 
 /****************************************************************
 ********************** Desktop > 900px ***************************
