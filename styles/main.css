@@ -64,8 +64,8 @@ table {
 	--accent_light: #d4e1ac;
 
 	/* Site fonts */
-	--serif: 'Arima Madurai';
-	--sans: 'Raleway';
+	--serif: Arima Madurai;
+	--sans: Raleway;
 	--script: Great Vibes;
 
 	/* Animation settings */
@@ -165,7 +165,7 @@ header > a:focus{
 
 /************ Headings ***************/
 h1{
-	font-family: var(--serif), cursive;
+	font-family: var(--serif);
 	color: var(--primary);
 	font-size: 2.5rem;
 
