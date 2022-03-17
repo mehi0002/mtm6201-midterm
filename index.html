@@ -47,8 +47,16 @@
                <div><i class="fa fa-duotone fa-backward-step"></i></div>
            
                 <picture>
+
+                    <!-- Desktop > 900px -->
+                    <source srcset="
+                        images/desktop/d_banner.jpg,
+                        images/desktop/d_bannerx2.jpg 1.5x,
+                        images/desktop/d_bannerx3.jpg 2x"
+                        media="(min-width:900px)">
+
                     <!-- Tablet 600px > 900px -->
-                    <source scrset="
+                    <source srcset="
                         images/tablet/t_banner.jpg,
                         images/tablet/t_bannerx2.jpg 1.5x,
                         images/tablet/t_bannerx3.jpg 2x"
@@ -72,20 +80,28 @@
                     <h2 id="wedding_heading" itemprop="name" role="heading">In Love</h2>
                     
                     <picture itemprop="image" aria-labelledby="wedding_heading" aria-details="wedding_blurb">
+                        
+                        <!-- Desktop > 900px -->
+                        <source srcset="
+                            images/desktop/d_in_love.jpg,
+                            images/desktop/d_in_lovex2.jpg 1.5x,
+                            images/desktop/d_in_lovex3.jpg 2x"
+                            media="(min-width:900px)">
+
+                        <!-- Tablet 600px > 900px -->
+                            <source srcset="
+                            images/tablet/t_in_love.jpg,
+                            images/tablet/t_in_lovex2.jpg 1.5x,
+                            images/tablet/t_in_lovex3.jpg 2x"
+                            media="(min-width:600px)">
+
                         <!-- Viewports below 600px  -->
                         <source srcset="
                             images/mobile/m_in_love.jpg, 
                             images/mobile/m_in_lovex2.jpg 1.5x,
                             images/mobile/m_in_lovex3.jpg 2x" 
-                            media="(max-width: 600px)">
+                            media="(max-width: 600px)">   
 
-                        <!-- Tablet 600px > 900px -->
-                         <source scrset="
-                            images/tablet/t_in_love.jpg,
-                            images/tablet/t_in_lovex2.jpg 1.5x,
-                            images/tablet/t_in_lovex3.jpg 2x"
-                            media="(min-width:600px)">    
-                        
                         <!-- Default -->
                         <img src="images/mobile/m_in_lovex3.jpg" alt="a bride and a groom">
                     </picture>
@@ -107,11 +123,18 @@
                             media="(max-width: 600px)">
 
                         <!-- Tablet 600px > 900px -->
-                         <source scrset="
+                         <source srcset="
                             images/tablet/t_expectant.jpg,
                             images/tablet/t_expectantx2.jpg 1.5x,
                             images/tablet/t_expectantx3.jpg 2x"
                             media="(min-width:600px)">
+
+                        <!-- Desktop > 900px -->
+                         <source srcset="
+                            images/desktop/d_expectant.jpg,
+                            images/desktop/d_expectantx2.jpg 1.5x,
+                            images/desktop/d_expectantx3.jpg 2x"
+                            media="(min-width:900px)">
 
                             <!-- Default -->
                             <img src="images/expectant.jpg" alt="a pregnant person placing their hands in a heart over their belly">
@@ -135,12 +158,19 @@
                             media="(max-width: 600px)">
                         
                         <!-- Tablet 600px > 900px -->
-                         <source scrset="
+                         <source srcset="
                             images/tablet/t_celebrate.jpg,
                             images/tablet/t_celebratex2.jpg 1.5x,
                             images/tablet/t_celebratex3.jpg 2x"
                             media="(min-width:600px)">
                         
+                        <!-- Desktop > 900px -->
+                            <source srcset="
+                            images/desktop/d_celebrate.jpg,
+                            images/desktop/d_celebratex2.jpg 1.5x,
+                            images/desktop/d_celebratex3.jpg 2x"
+                            media="(min-width:900px)">
+
                         <!-- Default -->
                         <img src="images/celebrate.jpg" alt="a woman smiling and throwing confetti into the air">
                     </picture>
@@ -163,12 +193,19 @@
                             media="(max-width: 600px)">
                         
                         <!-- Tablet 600px > 900px -->
-                        <source scrset="
+                        <source srcset="
                             images/tablet/t_impress.jpg,
                             images/tablet/t_impressx2.jpg 1.5x,
                             images/tablet/t_impressx3.jpg 2x"
                             media="(min-width:600px)">
                             
+                            <!-- Desktop > 900px -->
+                                <source srcset="
+                                images/desktop/d_impress.jpg,
+                                images/desktop/d_impressx2.jpg 1.5x,
+                                images/desktop/d_impressx3.jpg 2x"
+                                media="(min-width:900px)">
+
                             <!-- Default -->
                             <img src="images/impress.jpg" alt="Gold confetti exploding out of a champange glass">
                     </picture>
@@ -185,10 +222,9 @@
 
             <!-- Social media links -->
             <div role="group" class="social" itemscope itemtype="http://schema.org/Organization">
-                <button role="button" itemprop="url">IG</button>
                 <button role="button" itemprop="sameAs">F</button>
                 <button role="button" itemprop="sameAs">T</button>
-                <button role="button" itemprop="sameAs">P</button>
+                <button role="button" itemprop="url">IG</button>
             </div>
 
             <!-- Copyright -->
