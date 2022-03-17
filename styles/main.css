@@ -85,6 +85,11 @@ body{
 	box-sizing: border-box;
 }
 
+#container{
+	max-width: 1200px;
+	margin: auto;
+}
+
 /* Full width for mobile */
 header{
 	width: 100%;
@@ -362,15 +367,13 @@ button:hover, button:active, button:focus{
 	/* Card Grid */
 	#services{
 		display:grid;
-		grid-template-areas: 
-		'h h'
-		'. .'
-		'. .';
+		grid-template-columns: repeat(2, 1fr);
 		gap: var(--container_padding);
 	}
 
 	#services h1{
-		grid-area: h;
+		grid-column-start: 1;
+		grid-column-end: span 2;
 	}
 
 	/* card style */
@@ -380,8 +383,8 @@ button:hover, button:active, button:focus{
 		justify-content: space-around;
 		align-items: center;
 		
-		padding: calc(var(--container_padding) / 2);
-		width: calc(100% - var(--container_padding));
+		padding: calc(var(--container_padding));
+		width: calc(100% - (var(--container_padding)*2) );
 		border-radius: 15px;
 		border: 2px solid var(--accent);
 		font-size: 1rem;
@@ -410,7 +413,7 @@ button:hover, button:active, button:focus{
 
 	.card button{
 		width: 60%;
-		margin-top: calc( var(--container_padding) / 2);
+		margin-top: calc( var(--container_padding) * 1.5);
 		font-size: 1rem;
 	}
 }
@@ -427,7 +430,7 @@ button:hover, button:active, button:focus{
 }
 
 /****************************************************************
-********************** Desktop > 900px ***************************
+********************** Desktop 900px > 1200px *******************
 *****************************************************************/
 
 @media screen and (min-width: 900px){
@@ -441,11 +444,6 @@ button:hover, button:active, button:focus{
 		font-size: 1.5rem;
 	}
 
-	/* White Space */
-	#services{
-		padding-bottom: 0px;
-	}
-	
 	/**************** Navigation ***************/
 	
 	/* Single row */
@@ -481,21 +479,37 @@ button:hover, button:active, button:focus{
 		order:5;
 	}
 
+	/***************** Service Cards ************** */
 	#services{
-		grid-template-areas:
+		/* grid-template-areas:
 		'h h h h'
-		'. . . .'; 
-
-		/* grid-template-columns: repeat(4, 1fr); */
+		'. . . .';  */
 		margin-bottom: 0px;
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	#services h1{
-		/* grid-column-start:1;
-		grid-column-end: span 4; */
+		grid-column-start:1;
+		grid-column-end: span 4;
+		gap: calc( var(--container_padding) / 2);
+	}
+
+	.card{
+		padding: calc( var(--container_padding) / 2);
+		width: calc(100% - var(--container_padding));
 	}
 
 	.card h2{
 		font-size: 1.5rem;
+	}
+
+}
+
+/****************************************************************
+********************** Desktop > 1050px *******************
+*****************************************************************/
+@media screen and (min-width: 1050px){
+	.card h2{
+		font-size: 2rem;
 	}
 }
