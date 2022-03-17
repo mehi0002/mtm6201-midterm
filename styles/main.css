@@ -139,6 +139,7 @@ header a{
 header a:hover, header a:active, header a:focus, .current_page{
 	color: var(--page);
 	background-color: var(--primary);
+	text-decoration: none;
 }
 
 /* logo */
@@ -190,6 +191,18 @@ h3{
 
 h4{
 	font-size: 1rem;
+}
+
+/* Links */
+a, a:visited{
+	text-decoration: none;
+	color: var(--primary);
+	transition: color var(--link_timing) var(--link_flow);
+}
+
+a:hover, a:active{
+	text-decoration: underline;
+	color: var(--accent);
 }
 
 /* button style */
@@ -287,6 +300,20 @@ button:hover, button:active, button:focus{
 	font-family: var(--serif);
     border: none;
     
+}
+
+/*************** About Page *****************
+*********************************************/
+
+/* Main content container */
+#about{
+	max-width: 900px;
+	margin: auto;
+	display:grid;
+	grid-template-columns: 1fr;
+	gap: var(--container_padding);
+	text-align: center;
+	line-height: 1.5;
 }
 
 /****************************************************************
